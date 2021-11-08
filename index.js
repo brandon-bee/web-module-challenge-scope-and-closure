@@ -28,11 +28,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+
+    counter1 has the variable count inside a function, so it can not be accessed outside of that. counter2 has it in the global scope. Both increment the number stored to that variable when called.
+
   2. Which of the two uses a closure? How can you tell?
   
+    counter1. It is the one with an inner function that uses data from the function it is held.
+  
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?
+
+    If you wanted to keep track of a value and store the changes to it, but not have the variable be accessible by the rest of your code, use counter1. If you are looking to update a variable that is used in other places, use counter2.
 */
 
 // counter1 code
