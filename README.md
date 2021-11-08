@@ -61,6 +61,9 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+  Closure is when an inner function (a function inside another function) goes outside itself to get data from the function it is in.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,7 +85,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  When the name variable in function() is console logged, it goes to the outer personalDice() function to get the value for name.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+  
+
 c. What is the lexical scope of `newRoll`? 
 
 
